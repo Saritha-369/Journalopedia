@@ -1,0 +1,1 @@
+<!-- I crafted a responsive web application featuring intuitive UI designs for login, signup, and search functionalities. The search results are presented with pagination and adjustable columns for an optimal viewing experience. The application provides a seamless and user-friendly interaction for an enhanced user experience -->

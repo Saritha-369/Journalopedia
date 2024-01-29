@@ -1,0 +1,1924 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Journalopedia</title>
+    <link
+      rel="stylesheet"
+      href="../../vendors/mdi/css/materialdesignicons.min.css"
+    />
+    <link rel="stylesheet" href="../../vendors/base/vendor.bundle.base.css" />
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="shortcut icon" href="../../images/journalopedia-logo-mini.jpg" />
+
+    <link
+      rel="stylesheet"
+      href=" https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"
+    />
+    <link
+      rel="stylesheet"
+      href=" 
+https://cdn.datatables.net/1.13.7/css/dataTables.jqueryui.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="  https://cdn.datatables.net/rowgroup/1.4.1/css/rowGroup.jqueryui.min.css
+"
+    />
+  </head>
+
+  <body>
+    <div class="container-scroller">
+      <!-- navbar.html -->
+      <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+        <div class="navbar-brand-wrapper d-flex justify-content-center">
+          <div
+            class="navbar-brand-inner-wrapper d-flex justify-content-between align-items-center w-100"
+          >
+            <a class="navbar-brand brand-logo" href="index.html"
+              ><img src="../../images/journalopedia-logo.jpg" alt="logo"
+            /></a>
+            <a class="navbar-brand brand-logo-mini" href="index.html"
+              ><img src="../../images/journalopedia-logo-mini.jpg" alt="logo"
+            /></a>
+            <button
+              class="navbar-toggler navbar-toggler align-self-center"
+              type="button"
+              data-toggle="minimize"
+            >
+              <span class="mdi mdi-sort-variant"></span>
+            </button>
+          </div>
+        </div>
+        <div
+          class="navbar-menu-wrapper d-flex align-items-center justify-content-end"
+        >
+          <ul class="navbar-nav mr-lg-4 w-100">
+            <li class="nav-item nav-search d-none d-lg-block w-100">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="search">
+                    <i class="mdi mdi-magnify"></i>
+                  </span>
+                </div>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Search now"
+                  aria-label="search"
+                  aria-describedby="search"
+                />
+              </div>
+            </li>
+          </ul>
+          <ul class="navbar-nav navbar-nav-right">
+            <li class="nav-item dropdown me-1">
+              <a
+                class="nav-link count-indicator dropdown-toggle d-flex justify-content-center align-items-center"
+                id="messageDropdown"
+                href="#"
+                data-bs-toggle="dropdown"
+              >
+                <i class="mdi mdi-message-text mx-0"></i>
+                <span class="count"></span>
+              </a>
+              <div
+                class="dropdown-menu dropdown-menu-right navbar-dropdown"
+                aria-labelledby="messageDropdown"
+              >
+                <p class="mb-0 font-weight-normal float-left dropdown-header">
+                  Messages
+                </p>
+                <a class="dropdown-item">
+                  <div class="item-thumbnail">
+                    <svg
+                      width="3em"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="icon icon-tabler icon-tabler-user-circle"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="currentColor"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+                      <path d="M12 10m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                      <path
+                        d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855"
+                      />
+                    </svg>
+                  </div>
+                  <div class="item-content flex-grow">
+                    <h6 class="ellipsis font-weight-normal">Saritha</h6>
+                    <p class="font-weight-light small-text text-muted mb-0">
+                      Lorem ipsum dolor sit amet.
+                    </p>
+                  </div>
+                </a>
+                <a class="dropdown-item">
+                  <div class="item-thumbnail">
+                    <svg
+                      width="3em"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="icon icon-tabler icon-tabler-user-circle"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="currentColor"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+                      <path d="M12 10m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                      <path
+                        d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855"
+                      />
+                    </svg>
+                  </div>
+                  <div class="item-content flex-grow">
+                    <h6 class="ellipsis font-weight-normal">Username</h6>
+                    <p class="font-weight-light small-text text-muted mb-0">
+                      Lorem ipsum dolor sit amet.
+                    </p>
+                  </div>
+                </a>
+                <a class="dropdown-item">
+                  <div class="item-thumbnail">
+                    <svg
+                      width="3em"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="icon icon-tabler icon-tabler-user-circle"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="currentColor"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+                      <path d="M12 10m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                      <path
+                        d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855"
+                      />
+                    </svg>
+                  </div>
+                  <div class="item-content flex-grow">
+                    <h6 class="ellipsis font-weight-normal">username</h6>
+                    <p class="font-weight-light small-text text-muted mb-0">
+                      Lorem ipsum dolor sit amet.
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </li>
+            <li class="nav-item dropdown me-4">
+              <a
+                class="nav-link count-indicator dropdown-toggle d-flex align-items-center justify-content-center notification-dropdown"
+                id="notificationDropdown"
+                href="#"
+                data-bs-toggle="dropdown"
+              >
+                <i class="mdi mdi-bell mx-0"></i>
+                <span class="count"></span>
+              </a>
+              <div
+                class="dropdown-menu dropdown-menu-right navbar-dropdown"
+                aria-labelledby="notificationDropdown"
+              >
+                <a class="dropdown-item">
+                  <div class="item-thumbnail">
+                    <div class="item-icon bg-warning">
+                      <i class="mdi mdi-settings mx-0"></i>
+                    </div>
+                  </div>
+                  <div class="item-content">
+                    <h6 class="font-weight-normal">Settings</h6>
+                    <p class="font-weight-light small-text mb-0 text-muted">
+                      Private message
+                    </p>
+                  </div>
+                </a>
+                <a class="dropdown-item">
+                  <div class="item-thumbnail">
+                    <div class="item-icon bg-info">
+                      <i class="mdi mdi-account-box mx-0"></i>
+                    </div>
+                  </div>
+                  <div class="item-content">
+                    <h6 class="font-weight-normal">New user registration</h6>
+                    <p class="font-weight-light small-text mb-0 text-muted">
+                      2 days ago
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </li>
+            <li class="nav-item nav-profile dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+                id="profileDropdown"
+              >
+                <img src="../../images/faces/face5.jpg" alt="profile" />
+                <span class="nav-profile-name">User</span>
+              </a>
+              <div
+                class="dropdown-menu dropdown-menu-right navbar-dropdown"
+                aria-labelledby="profileDropdown"
+              >
+                <a class="dropdown-item">
+                  <i class="mdi mdi-settings text-primary"></i>
+                  Settings
+                </a>
+                <a class="dropdown-item" href="../template/pages/samples/login.html">
+                  <i class="mdi mdi-logout text-primary"></i>
+                  Logout
+                </a>
+              </div>
+            </li>
+          </ul>
+          <button
+            class="navbar-toggler navbar-toggler-right d-lg-none align-self-center"
+            type="button"
+            data-toggle="offcanvas"
+          >
+            <span class="mdi mdi-menu"></span>
+          </button>
+        </div>
+      </nav>
+      <!-- End -->
+      <div class="container-fluid page-body-wrapper">
+        <!-- sidebar.html -->
+        <nav class="sidebar sidebar-offcanvas" id="sidebar">
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="mdi mdi-home menu-icon"></i>
+                <span class="menu-title">Dashboard</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../index.html">
+                <i class="mdi mdi-view-headline menu-icon"></i>
+                <span class="menu-title">Search Query Form</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../searchResults/searchResults.html">
+                <i class="mdi mdi-chart-pie menu-icon"></i>
+                <span class="menu-title">Search Results</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../detailpage/journalDetails.html">
+                <i class="mdi mdi-grid-large menu-icon"></i>
+                <span class="menu-title">Journal Details</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                data-bs-toggle="collapse"
+                href="#auth"
+                aria-expanded="false"
+                aria-controls="auth"
+              >
+                <i class="mdi mdi-account menu-icon"></i>
+                <span class="menu-title">User Pages</span>
+                <i class="menu-arrow"></i>
+              </a>
+              <div class="collapse" id="auth">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item">
+                    <a class="nav-link" href="../template/pages/samples/login.html"
+                      ><svg
+                        width="1.5em"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="icon icon-tabler icon-tabler-login"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        stroke-width="2"
+                        stroke="currentColor"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path
+                          d="M15 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2"
+                        />
+                        <path d="M21 12h-13l3 -3" />
+                        <path d="M11 15l-3 -3" />
+                      </svg>
+                      <span class="ms-2">Login</span>
+                    </a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="../template/pages/samples/register.html"
+                      ><svg
+                        width="1.5em"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="icon icon-tabler icon-tabler-user-check"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        stroke-width="2"
+                        stroke="currentColor"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
+                        <path d="M6 21v-2a4 4 0 0 1 4 -4h4" />
+                        <path d="M15 19l2 2l4 -4" />
+                      </svg>
+                      <span class="ms-2">Register</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <!-- End -->
+        <div class="main-panel">
+          <div class="content-wrapper">
+            <div class="row">
+              <div class="col-lg-12 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">Search Results</h4>
+                    <div class="table-responsive">
+                      <div class="container">
+                        <div class="row py-2">
+                          <div class="col-12">
+                            <table
+                              id="example"
+                              class="display"
+                              style="width: 100%"
+                            >
+                              <thead>
+                                <tr>
+                                  <th>S.NO</th>
+                                  <th>Journal Details</th>
+                                  <th>SCS</th>
+                                  <th>WOS</th>
+                                  <th>INCI</th>
+                                  <th>PBM</th>
+                                  <th>IEE</th>
+                                  <th>SNIP</th>
+                                  <th>IMF</th>
+                                  <th>KQM</th>
+                                  <th>SUBMIT</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>1.</td>
+                                  <td>
+                                    <a
+                                      href="http://iopscience.iop.org/journal/2053-1583"
+                                      style="color:#664cbe">2D Materials</a
+                                    >
+                                    <a href="../detailpage/journalDetails.html" style="color:black;text-decoration: none;">
+                                    <p>
+                                      &#x1F512; INTERNATIONAL, [Frequency- 4 ]
+                                    </p>
+                                    <p>
+                                      2D Materials™ is a multidisciplinary,
+                                      <br />electronic-only journal devoted..
+                                    </p>
+                                  </a>
+                                  </td>
+                                  <td>
+                                    
+                                    <ul class="example-2">
+                                      <li class="icon-content">
+                                        <a
+                                          href="#"
+                                          aria-label="scs"
+                                          data-social="scs"
+                                        >
+                                          <div class="filled"></div>
+                                          <svg width="1em" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-info-octagon" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                            <path d="M12.802 2.165l5.575 2.389c.48 .206 .863 .589 1.07 1.07l2.388 5.574c.22 .512 .22 1.092 0 1.604l-2.389 5.575c-.206 .48 -.589 .863 -1.07 1.07l-5.574 2.388c-.512 .22 -1.092 .22 -1.604 0l-5.575 -2.389a2.036 2.036 0 0 1 -1.07 -1.07l-2.388 -5.574a2.036 2.036 0 0 1 0 -1.604l2.389 -5.575c.206 -.48 .589 -.863 1.07 -1.07l5.574 -2.388a2.036 2.036 0 0 1 1.604 0z" />
+                                            <path d="M12 9h.01" />
+                                            <path d="M11 12h1v4h1" />
+                                          </svg>
+                                        </a>
+                                        <div class="tooltip">Active</div>
+                                      </li>
+                                    </ul>
+                                  </td>
+                                  <td><ul class="example-2">
+                                    <li class="icon-content">
+                                      <a
+                                        href="#"
+                                        aria-label="scs"
+                                        data-social="scs"
+                                      >
+                                        <div class="filled"></div>
+                                        <svg width="1.5em" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-info-octagon" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                          <path d="M12.802 2.165l5.575 2.389c.48 .206 .863 .589 1.07 1.07l2.388 5.574c.22 .512 .22 1.092 0 1.604l-2.389 5.575c-.206 .48 -.589 .863 -1.07 1.07l-5.574 2.388c-.512 .22 -1.092 .22 -1.604 0l-5.575 -2.389a2.036 2.036 0 0 1 -1.07 -1.07l-2.388 -5.574a2.036 2.036 0 0 1 0 -1.604l2.389 -5.575c.206 -.48 .589 -.863 1.07 -1.07l5.574 -2.388a2.036 2.036 0 0 1 1.604 0z" />
+                                          <path d="M12 9h.01" />
+                                          <path d="M11 12h1v4h1" />
+                                        </svg>
+                                      </a>
+                                      <div class="tooltip">YES</div>
+                                    </li>
+                                  </ul></td>
+                                  <td>
+                                  <ul class="example-2">
+                                    <li class="icon-content">
+                                      <a
+                                        href="#"
+                                        aria-label="scs"
+                                        data-social="scs"
+                                      >
+                                        <div class="filled"></div>
+                                        <svg width="1.5em" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-info-octagon" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                          <path d="M12.802 2.165l5.575 2.389c.48 .206 .863 .589 1.07 1.07l2.388 5.574c.22 .512 .22 1.092 0 1.604l-2.389 5.575c-.206 .48 -.589 .863 -1.07 1.07l-5.574 2.388c-.512 .22 -1.092 .22 -1.604 0l-5.575 -2.389a2.036 2.036 0 0 1 -1.07 -1.07l-2.388 -5.574a2.036 2.036 0 0 1 0 -1.604l2.389 -5.575c.206 -.48 .589 -.863 1.07 -1.07l5.574 -2.388a2.036 2.036 0 0 1 1.604 0z" />
+                                          <path d="M12 9h.01" />
+                                          <path d="M11 12h1v4h1" />
+                                        </svg>
+                                      </a>
+                                      <div class="tooltip">YES</div>
+                                    </li>
+                                  </ul></td>
+                                  <td><ul class="example-2">
+                                    <li class="icon-content">
+                                      <a
+                                        href="#"
+                                        aria-label="scs"
+                                        data-social="scs"
+                                      >
+                                        <div class="filled"></div>
+                                        <svg width="1.5em" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-info-octagon" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                          <path d="M12.802 2.165l5.575 2.389c.48 .206 .863 .589 1.07 1.07l2.388 5.574c.22 .512 .22 1.092 0 1.604l-2.389 5.575c-.206 .48 -.589 .863 -1.07 1.07l-5.574 2.388c-.512 .22 -1.092 .22 -1.604 0l-5.575 -2.389a2.036 2.036 0 0 1 -1.07 -1.07l-2.388 -5.574a2.036 2.036 0 0 1 0 -1.604l2.389 -5.575c.206 -.48 .589 -.863 1.07 -1.07l5.574 -2.388a2.036 2.036 0 0 1 1.604 0z" />
+                                          <path d="M12 9h.01" />
+                                          <path d="M11 12h1v4h1" />
+                                        </svg>
+                                      </a>
+                                      <div class="tooltip">YES</div>
+                                    </li>
+                                  </ul></td>
+                                  <td><ul class="example-2">
+                                    <li class="icon-content">
+                                      <a
+                                        href="#"
+                                        aria-label="scs"
+                                        data-social="scs"
+                                      >
+                                        <div class="filled"></div>
+                                        <svg width="21.5em" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-info-octagon" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                          <path d="M12.802 2.165l5.575 2.389c.48 .206 .863 .589 1.07 1.07l2.388 5.574c.22 .512 .22 1.092 0 1.604l-2.389 5.575c-.206 .48 -.589 .863 -1.07 1.07l-5.574 2.388c-.512 .22 -1.092 .22 -1.604 0l-5.575 -2.389a2.036 2.036 0 0 1 -1.07 -1.07l-2.388 -5.574a2.036 2.036 0 0 1 0 -1.604l2.389 -5.575c.206 -.48 .589 -.863 1.07 -1.07l5.574 -2.388a2.036 2.036 0 0 1 1.604 0z" />
+                                          <path d="M12 9h.01" />
+                                          <path d="M11 12h1v4h1" />
+                                        </svg>
+                                      </a>
+                                      <div class="tooltip">YES</div>
+                                    </li>
+                                  </ul></td>
+                                  <td>1.127</td>
+                                  <td>5.5</td>
+                                  <td><a href=""><svg width="2em" stroke="#0fb492" stroke-width="2" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-folder-plus" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                    <path d="M12 19h-7a2 2 0 0 1 -2 -2v-11a2 2 0 0 1 2 -2h4l3 3h7a2 2 0 0 1 2 2v3.5" />
+                                    <path d="M16 19h6" />
+                                    <path d="M19 16v6" />
+                                  </svg></a></td>
+                                  <td><button class="register-btn">Register</button></td>
+                                </tr>
+                                <tr>
+                                  <td>2.</td>
+                                  <td>
+                                    <a
+                                      href="http://iopscience.iop.org/journal/2053-1583"
+                                      style="color:#664cbe">2D Materials</a
+                                    >
+                                    <a href="../detailpage/journalDetails.html" style="color:black;text-decoration: none;">
+                                    <p>
+                                      &#x1F512; INTERNATIONAL, [Frequency- 4 ]
+                                    </p>
+                                    <p>
+                                      2D Materials™ is a multidisciplinary,
+                                      <br />electronic-only journal devoted..
+                                    </p>
+                                  </a>
+                                  </td>
+                                  <td>
+                                    
+                                    <ul class="example-2">
+                                      <li class="icon-content">
+                                        <a
+                                          href="#"
+                                          aria-label="scs"
+                                          data-social="scs"
+                                        >
+                                          <div class="filled"></div>
+                                          <svg width="1em" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-info-octagon" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                            <path d="M12.802 2.165l5.575 2.389c.48 .206 .863 .589 1.07 1.07l2.388 5.574c.22 .512 .22 1.092 0 1.604l-2.389 5.575c-.206 .48 -.589 .863 -1.07 1.07l-5.574 2.388c-.512 .22 -1.092 .22 -1.604 0l-5.575 -2.389a2.036 2.036 0 0 1 -1.07 -1.07l-2.388 -5.574a2.036 2.036 0 0 1 0 -1.604l2.389 -5.575c.206 -.48 .589 -.863 1.07 -1.07l5.574 -2.388a2.036 2.036 0 0 1 1.604 0z" />
+                                            <path d="M12 9h.01" />
+                                            <path d="M11 12h1v4h1" />
+                                          </svg>
+                                        </a>
+                                        <div class="tooltip">Active</div>
+                                      </li>
+                                    </ul>
+                                  </td>
+                                  <td><ul class="example-2">
+                                    <li class="icon-content">
+                                      <a
+                                        href="#"
+                                        aria-label="scs"
+                                        data-social="scs"
+                                      >
+                                        <div class="filled"></div>
+                                        <svg width="1.5em" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-info-octagon" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                          <path d="M12.802 2.165l5.575 2.389c.48 .206 .863 .589 1.07 1.07l2.388 5.574c.22 .512 .22 1.092 0 1.604l-2.389 5.575c-.206 .48 -.589 .863 -1.07 1.07l-5.574 2.388c-.512 .22 -1.092 .22 -1.604 0l-5.575 -2.389a2.036 2.036 0 0 1 -1.07 -1.07l-2.388 -5.574a2.036 2.036 0 0 1 0 -1.604l2.389 -5.575c.206 -.48 .589 -.863 1.07 -1.07l5.574 -2.388a2.036 2.036 0 0 1 1.604 0z" />
+                                          <path d="M12 9h.01" />
+                                          <path d="M11 12h1v4h1" />
+                                        </svg>
+                                      </a>
+                                      <div class="tooltip">YES</div>
+                                    </li>
+                                  </ul></td>
+                                  <td>
+                                  <ul class="example-2">
+                                    <li class="icon-content">
+                                      <a
+                                        href="#"
+                                        aria-label="scs"
+                                        data-social="scs"
+                                      >
+                                        <div class="filled"></div>
+                                        <svg width="1.5em" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-info-octagon" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                          <path d="M12.802 2.165l5.575 2.389c.48 .206 .863 .589 1.07 1.07l2.388 5.574c.22 .512 .22 1.092 0 1.604l-2.389 5.575c-.206 .48 -.589 .863 -1.07 1.07l-5.574 2.388c-.512 .22 -1.092 .22 -1.604 0l-5.575 -2.389a2.036 2.036 0 0 1 -1.07 -1.07l-2.388 -5.574a2.036 2.036 0 0 1 0 -1.604l2.389 -5.575c.206 -.48 .589 -.863 1.07 -1.07l5.574 -2.388a2.036 2.036 0 0 1 1.604 0z" />
+                                          <path d="M12 9h.01" />
+                                          <path d="M11 12h1v4h1" />
+                                        </svg>
+                                      </a>
+                                      <div class="tooltip">YES</div>
+                                    </li>
+                                  </ul></td>
+                                  <td><ul class="example-2">
+                                    <li class="icon-content">
+                                      <a
+                                        href="#"
+                                        aria-label="scs"
+                                        data-social="scs"
+                                      >
+                                        <div class="filled"></div>
+                                        <svg width="1.5em" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-info-octagon" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                          <path d="M12.802 2.165l5.575 2.389c.48 .206 .863 .589 1.07 1.07l2.388 5.574c.22 .512 .22 1.092 0 1.604l-2.389 5.575c-.206 .48 -.589 .863 -1.07 1.07l-5.574 2.388c-.512 .22 -1.092 .22 -1.604 0l-5.575 -2.389a2.036 2.036 0 0 1 -1.07 -1.07l-2.388 -5.574a2.036 2.036 0 0 1 0 -1.604l2.389 -5.575c.206 -.48 .589 -.863 1.07 -1.07l5.574 -2.388a2.036 2.036 0 0 1 1.604 0z" />
+                                          <path d="M12 9h.01" />
+                                          <path d="M11 12h1v4h1" />
+                                        </svg>
+                                      </a>
+                                      <div class="tooltip">YES</div>
+                                    </li>
+                                  </ul></td>
+                                  <td><ul class="example-2">
+                                    <li class="icon-content">
+                                      <a
+                                        href="#"
+                                        aria-label="scs"
+                                        data-social="scs"
+                                      >
+                                        <div class="filled"></div>
+                                        <svg width="21.5em" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-info-octagon" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                          <path d="M12.802 2.165l5.575 2.389c.48 .206 .863 .589 1.07 1.07l2.388 5.574c.22 .512 .22 1.092 0 1.604l-2.389 5.575c-.206 .48 -.589 .863 -1.07 1.07l-5.574 2.388c-.512 .22 -1.092 .22 -1.604 0l-5.575 -2.389a2.036 2.036 0 0 1 -1.07 -1.07l-2.388 -5.574a2.036 2.036 0 0 1 0 -1.604l2.389 -5.575c.206 -.48 .589 -.863 1.07 -1.07l5.574 -2.388a2.036 2.036 0 0 1 1.604 0z" />
+                                          <path d="M12 9h.01" />
+                                          <path d="M11 12h1v4h1" />
+                                        </svg>
+                                      </a>
+                                      <div class="tooltip">YES</div>
+                                    </li>
+                                  </ul></td>
+                                  <td>1.127</td>
+                                  <td>5.5</td>
+                                  <td><a href=""><svg width="2em" stroke="#0fb492" stroke-width="2" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-folder-plus" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                    <path d="M12 19h-7a2 2 0 0 1 -2 -2v-11a2 2 0 0 1 2 -2h4l3 3h7a2 2 0 0 1 2 2v3.5" />
+                                    <path d="M16 19h6" />
+                                    <path d="M19 16v6" />
+                                  </svg></a></td>
+                                  <td><button class="register-btn">Register</button></td>
+                                </tr>
+                                <tr>
+                                  <td>3.</td>
+                                  <td>
+                                    <a
+                                      href="http://iopscience.iop.org/journal/2053-1583"
+                                      style="color:#664cbe">2D Materials</a
+                                    >
+                                    <a href="../detailpage/journalDetails.html" style="color:black;text-decoration: none;">
+                                    <p>
+                                      &#x1F512; INTERNATIONAL, [Frequency- 4 ]
+                                    </p>
+                                    <p>
+                                      2D Materials™ is a multidisciplinary,
+                                      <br />electronic-only journal devoted..
+                                    </p>
+                                  </a>
+                                  </td>
+                                  <td>
+                                    
+                                    <ul class="example-2">
+                                      <li class="icon-content">
+                                        <a
+                                          href="#"
+                                          aria-label="scs"
+                                          data-social="scs"
+                                        >
+                                          <div class="filled"></div>
+                                          <svg width="1em" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-info-octagon" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                            <path d="M12.802 2.165l5.575 2.389c.48 .206 .863 .589 1.07 1.07l2.388 5.574c.22 .512 .22 1.092 0 1.604l-2.389 5.575c-.206 .48 -.589 .863 -1.07 1.07l-5.574 2.388c-.512 .22 -1.092 .22 -1.604 0l-5.575 -2.389a2.036 2.036 0 0 1 -1.07 -1.07l-2.388 -5.574a2.036 2.036 0 0 1 0 -1.604l2.389 -5.575c.206 -.48 .589 -.863 1.07 -1.07l5.574 -2.388a2.036 2.036 0 0 1 1.604 0z" />
+                                            <path d="M12 9h.01" />
+                                            <path d="M11 12h1v4h1" />
+                                          </svg>
+                                        </a>
+                                        <div class="tooltip">Active</div>
+                                      </li>
+                                    </ul>
+                                  </td>
+                                  <td><ul class="example-2">
+                                    <li class="icon-content">
+                                      <a
+                                        href="#"
+                                        aria-label="scs"
+                                        data-social="scs"
+                                      >
+                                        <div class="filled"></div>
+                                        <svg width="1.5em" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-info-octagon" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                          <path d="M12.802 2.165l5.575 2.389c.48 .206 .863 .589 1.07 1.07l2.388 5.574c.22 .512 .22 1.092 0 1.604l-2.389 5.575c-.206 .48 -.589 .863 -1.07 1.07l-5.574 2.388c-.512 .22 -1.092 .22 -1.604 0l-5.575 -2.389a2.036 2.036 0 0 1 -1.07 -1.07l-2.388 -5.574a2.036 2.036 0 0 1 0 -1.604l2.389 -5.575c.206 -.48 .589 -.863 1.07 -1.07l5.574 -2.388a2.036 2.036 0 0 1 1.604 0z" />
+                                          <path d="M12 9h.01" />
+                                          <path d="M11 12h1v4h1" />
+                                        </svg>
+                                      </a>
+                                      <div class="tooltip">YES</div>
+                                    </li>
+                                  </ul></td>
+                                  <td>
+                                  <ul class="example-2">
+                                    <li class="icon-content">
+                                      <a
+                                        href="#"
+                                        aria-label="scs"
+                                        data-social="scs"
+                                      >
+                                        <div class="filled"></div>
+                                        <svg width="1.5em" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-info-octagon" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                          <path d="M12.802 2.165l5.575 2.389c.48 .206 .863 .589 1.07 1.07l2.388 5.574c.22 .512 .22 1.092 0 1.604l-2.389 5.575c-.206 .48 -.589 .863 -1.07 1.07l-5.574 2.388c-.512 .22 -1.092 .22 -1.604 0l-5.575 -2.389a2.036 2.036 0 0 1 -1.07 -1.07l-2.388 -5.574a2.036 2.036 0 0 1 0 -1.604l2.389 -5.575c.206 -.48 .589 -.863 1.07 -1.07l5.574 -2.388a2.036 2.036 0 0 1 1.604 0z" />
+                                          <path d="M12 9h.01" />
+                                          <path d="M11 12h1v4h1" />
+                                        </svg>
+                                      </a>
+                                      <div class="tooltip">YES</div>
+                                    </li>
+                                  </ul></td>
+                                  <td><ul class="example-2">
+                                    <li class="icon-content">
+                                      <a
+                                        href="#"
+                                        aria-label="scs"
+                                        data-social="scs"
+                                      >
+                                        <div class="filled"></div>
+                                        <svg width="1.5em" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-info-octagon" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                          <path d="M12.802 2.165l5.575 2.389c.48 .206 .863 .589 1.07 1.07l2.388 5.574c.22 .512 .22 1.092 0 1.604l-2.389 5.575c-.206 .48 -.589 .863 -1.07 1.07l-5.574 2.388c-.512 .22 -1.092 .22 -1.604 0l-5.575 -2.389a2.036 2.036 0 0 1 -1.07 -1.07l-2.388 -5.574a2.036 2.036 0 0 1 0 -1.604l2.389 -5.575c.206 -.48 .589 -.863 1.07 -1.07l5.574 -2.388a2.036 2.036 0 0 1 1.604 0z" />
+                                          <path d="M12 9h.01" />
+                                          <path d="M11 12h1v4h1" />
+                                        </svg>
+                                      </a>
+                                      <div class="tooltip">YES</div>
+                                    </li>
+                                  </ul></td>
+                                  <td><ul class="example-2">
+                                    <li class="icon-content">
+                                      <a
+                                        href="#"
+                                        aria-label="scs"
+                                        data-social="scs"
+                                      >
+                                        <div class="filled"></div>
+                                        <svg width="21.5em" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-info-octagon" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                          <path d="M12.802 2.165l5.575 2.389c.48 .206 .863 .589 1.07 1.07l2.388 5.574c.22 .512 .22 1.092 0 1.604l-2.389 5.575c-.206 .48 -.589 .863 -1.07 1.07l-5.574 2.388c-.512 .22 -1.092 .22 -1.604 0l-5.575 -2.389a2.036 2.036 0 0 1 -1.07 -1.07l-2.388 -5.574a2.036 2.036 0 0 1 0 -1.604l2.389 -5.575c.206 -.48 .589 -.863 1.07 -1.07l5.574 -2.388a2.036 2.036 0 0 1 1.604 0z" />
+                                          <path d="M12 9h.01" />
+                                          <path d="M11 12h1v4h1" />
+                                        </svg>
+                                      </a>
+                                      <div class="tooltip">YES</div>
+                                    </li>
+                                  </ul></td>
+                                  <td>1.127</td>
+                                  <td>5.5</td>
+                                  <td><a href=""><svg width="2em" stroke="#0fb492" stroke-width="2" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-folder-plus" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                    <path d="M12 19h-7a2 2 0 0 1 -2 -2v-11a2 2 0 0 1 2 -2h4l3 3h7a2 2 0 0 1 2 2v3.5" />
+                                    <path d="M16 19h6" />
+                                    <path d="M19 16v6" />
+                                  </svg></a></td>
+                                  <td><button class="register-btn">Register</button></td>
+                                </tr>
+                                <tr>
+                                  <td>4.</td>
+                                  <td>
+                                    <a
+                                      href="http://iopscience.iop.org/journal/2053-1583"
+                                      style="color:#664cbe">2D Materials</a
+                                    >
+                                    <a href="../detailpage/journalDetails.html" style="color:black;text-decoration: none;">
+                                    <p>
+                                      &#x1F512; INTERNATIONAL, [Frequency- 4 ]
+                                    </p>
+                                    <p>
+                                      2D Materials™ is a multidisciplinary,
+                                      <br />electronic-only journal devoted..
+                                    </p>
+                                  </a>
+                                  </td>
+                                  <td>
+                                    
+                                    <ul class="example-2">
+                                      <li class="icon-content">
+                                        <a
+                                          href="#"
+                                          aria-label="scs"
+                                          data-social="scs"
+                                        >
+                                          <div class="filled"></div>
+                                          <svg width="1em" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-info-octagon" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                            <path d="M12.802 2.165l5.575 2.389c.48 .206 .863 .589 1.07 1.07l2.388 5.574c.22 .512 .22 1.092 0 1.604l-2.389 5.575c-.206 .48 -.589 .863 -1.07 1.07l-5.574 2.388c-.512 .22 -1.092 .22 -1.604 0l-5.575 -2.389a2.036 2.036 0 0 1 -1.07 -1.07l-2.388 -5.574a2.036 2.036 0 0 1 0 -1.604l2.389 -5.575c.206 -.48 .589 -.863 1.07 -1.07l5.574 -2.388a2.036 2.036 0 0 1 1.604 0z" />
+                                            <path d="M12 9h.01" />
+                                            <path d="M11 12h1v4h1" />
+                                          </svg>
+                                        </a>
+                                        <div class="tooltip">Active</div>
+                                      </li>
+                                    </ul>
+                                  </td>
+                                  <td><ul class="example-2">
+                                    <li class="icon-content">
+                                      <a
+                                        href="#"
+                                        aria-label="scs"
+                                        data-social="scs"
+                                      >
+                                        <div class="filled"></div>
+                                        <svg width="1.5em" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-info-octagon" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                          <path d="M12.802 2.165l5.575 2.389c.48 .206 .863 .589 1.07 1.07l2.388 5.574c.22 .512 .22 1.092 0 1.604l-2.389 5.575c-.206 .48 -.589 .863 -1.07 1.07l-5.574 2.388c-.512 .22 -1.092 .22 -1.604 0l-5.575 -2.389a2.036 2.036 0 0 1 -1.07 -1.07l-2.388 -5.574a2.036 2.036 0 0 1 0 -1.604l2.389 -5.575c.206 -.48 .589 -.863 1.07 -1.07l5.574 -2.388a2.036 2.036 0 0 1 1.604 0z" />
+                                          <path d="M12 9h.01" />
+                                          <path d="M11 12h1v4h1" />
+                                        </svg>
+                                      </a>
+                                      <div class="tooltip">YES</div>
+                                    </li>
+                                  </ul></td>
+                                  <td>
+                                  <ul class="example-2">
+                                    <li class="icon-content">
+                                      <a
+                                        href="#"
+                                        aria-label="scs"
+                                        data-social="scs"
+                                      >
+                                        <div class="filled"></div>
+                                        <svg width="1.5em" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-info-octagon" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                          <path d="M12.802 2.165l5.575 2.389c.48 .206 .863 .589 1.07 1.07l2.388 5.574c.22 .512 .22 1.092 0 1.604l-2.389 5.575c-.206 .48 -.589 .863 -1.07 1.07l-5.574 2.388c-.512 .22 -1.092 .22 -1.604 0l-5.575 -2.389a2.036 2.036 0 0 1 -1.07 -1.07l-2.388 -5.574a2.036 2.036 0 0 1 0 -1.604l2.389 -5.575c.206 -.48 .589 -.863 1.07 -1.07l5.574 -2.388a2.036 2.036 0 0 1 1.604 0z" />
+                                          <path d="M12 9h.01" />
+                                          <path d="M11 12h1v4h1" />
+                                        </svg>
+                                      </a>
+                                      <div class="tooltip">YES</div>
+                                    </li>
+                                  </ul></td>
+                                  <td><ul class="example-2">
+                                    <li class="icon-content">
+                                      <a
+                                        href="#"
+                                        aria-label="scs"
+                                        data-social="scs"
+                                      >
+                                        <div class="filled"></div>
+                                        <svg width="1.5em" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-info-octagon" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                          <path d="M12.802 2.165l5.575 2.389c.48 .206 .863 .589 1.07 1.07l2.388 5.574c.22 .512 .22 1.092 0 1.604l-2.389 5.575c-.206 .48 -.589 .863 -1.07 1.07l-5.574 2.388c-.512 .22 -1.092 .22 -1.604 0l-5.575 -2.389a2.036 2.036 0 0 1 -1.07 -1.07l-2.388 -5.574a2.036 2.036 0 0 1 0 -1.604l2.389 -5.575c.206 -.48 .589 -.863 1.07 -1.07l5.574 -2.388a2.036 2.036 0 0 1 1.604 0z" />
+                                          <path d="M12 9h.01" />
+                                          <path d="M11 12h1v4h1" />
+                                        </svg>
+                                      </a>
+                                      <div class="tooltip">YES</div>
+                                    </li>
+                                  </ul></td>
+                                  <td><ul class="example-2">
+                                    <li class="icon-content">
+                                      <a
+                                        href="#"
+                                        aria-label="scs"
+                                        data-social="scs"
+                                      >
+                                        <div class="filled"></div>
+                                        <svg width="21.5em" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-info-octagon" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                          <path d="M12.802 2.165l5.575 2.389c.48 .206 .863 .589 1.07 1.07l2.388 5.574c.22 .512 .22 1.092 0 1.604l-2.389 5.575c-.206 .48 -.589 .863 -1.07 1.07l-5.574 2.388c-.512 .22 -1.092 .22 -1.604 0l-5.575 -2.389a2.036 2.036 0 0 1 -1.07 -1.07l-2.388 -5.574a2.036 2.036 0 0 1 0 -1.604l2.389 -5.575c.206 -.48 .589 -.863 1.07 -1.07l5.574 -2.388a2.036 2.036 0 0 1 1.604 0z" />
+                                          <path d="M12 9h.01" />
+                                          <path d="M11 12h1v4h1" />
+                                        </svg>
+                                      </a>
+                                      <div class="tooltip">YES</div>
+                                    </li>
+                                  </ul></td>
+                                  <td>1.127</td>
+                                  <td>5.5</td>
+                                  <td><a href=""><svg width="2em" stroke="#0fb492" stroke-width="2" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-folder-plus" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                    <path d="M12 19h-7a2 2 0 0 1 -2 -2v-11a2 2 0 0 1 2 -2h4l3 3h7a2 2 0 0 1 2 2v3.5" />
+                                    <path d="M16 19h6" />
+                                    <path d="M19 16v6" />
+                                  </svg></a></td>
+                                  <td><button class="register-btn">Register</button></td>
+                                </tr>
+                                <tr>
+                                  <td>5.</td>
+                                  <td>
+                                    <a
+                                      href="http://iopscience.iop.org/journal/2053-1583"
+                                      style="color:#664cbe">2D Materials</a
+                                    >
+                                    <a href="../detailpage/journalDetails.html" style="color:black;text-decoration: none;">
+                                    <p>
+                                      &#x1F512; INTERNATIONAL, [Frequency- 4 ]
+                                    </p>
+                                    <p>
+                                      2D Materials™ is a multidisciplinary,
+                                      <br />electronic-only journal devoted..
+                                    </p>
+                                  </a>
+                                  </td>
+                                  <td>
+                                    
+                                    <ul class="example-2">
+                                      <li class="icon-content">
+                                        <a
+                                          href="#"
+                                          aria-label="scs"
+                                          data-social="scs"
+                                        >
+                                          <div class="filled"></div>
+                                          <svg width="1em" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-info-octagon" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                            <path d="M12.802 2.165l5.575 2.389c.48 .206 .863 .589 1.07 1.07l2.388 5.574c.22 .512 .22 1.092 0 1.604l-2.389 5.575c-.206 .48 -.589 .863 -1.07 1.07l-5.574 2.388c-.512 .22 -1.092 .22 -1.604 0l-5.575 -2.389a2.036 2.036 0 0 1 -1.07 -1.07l-2.388 -5.574a2.036 2.036 0 0 1 0 -1.604l2.389 -5.575c.206 -.48 .589 -.863 1.07 -1.07l5.574 -2.388a2.036 2.036 0 0 1 1.604 0z" />
+                                            <path d="M12 9h.01" />
+                                            <path d="M11 12h1v4h1" />
+                                          </svg>
+                                        </a>
+                                        <div class="tooltip">Active</div>
+                                      </li>
+                                    </ul>
+                                  </td>
+                                  <td><ul class="example-2">
+                                    <li class="icon-content">
+                                      <a
+                                        href="#"
+                                        aria-label="scs"
+                                        data-social="scs"
+                                      >
+                                        <div class="filled"></div>
+                                        <svg width="1.5em" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-info-octagon" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                          <path d="M12.802 2.165l5.575 2.389c.48 .206 .863 .589 1.07 1.07l2.388 5.574c.22 .512 .22 1.092 0 1.604l-2.389 5.575c-.206 .48 -.589 .863 -1.07 1.07l-5.574 2.388c-.512 .22 -1.092 .22 -1.604 0l-5.575 -2.389a2.036 2.036 0 0 1 -1.07 -1.07l-2.388 -5.574a2.036 2.036 0 0 1 0 -1.604l2.389 -5.575c.206 -.48 .589 -.863 1.07 -1.07l5.574 -2.388a2.036 2.036 0 0 1 1.604 0z" />
+                                          <path d="M12 9h.01" />
+                                          <path d="M11 12h1v4h1" />
+                                        </svg>
+                                      </a>
+                                      <div class="tooltip">YES</div>
+                                    </li>
+                                  </ul></td>
+                                  <td>
+                                  <ul class="example-2">
+                                    <li class="icon-content">
+                                      <a
+                                        href="#"
+                                        aria-label="scs"
+                                        data-social="scs"
+                                      >
+                                        <div class="filled"></div>
+                                        <svg width="1.5em" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-info-octagon" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                          <path d="M12.802 2.165l5.575 2.389c.48 .206 .863 .589 1.07 1.07l2.388 5.574c.22 .512 .22 1.092 0 1.604l-2.389 5.575c-.206 .48 -.589 .863 -1.07 1.07l-5.574 2.388c-.512 .22 -1.092 .22 -1.604 0l-5.575 -2.389a2.036 2.036 0 0 1 -1.07 -1.07l-2.388 -5.574a2.036 2.036 0 0 1 0 -1.604l2.389 -5.575c.206 -.48 .589 -.863 1.07 -1.07l5.574 -2.388a2.036 2.036 0 0 1 1.604 0z" />
+                                          <path d="M12 9h.01" />
+                                          <path d="M11 12h1v4h1" />
+                                        </svg>
+                                      </a>
+                                      <div class="tooltip">YES</div>
+                                    </li>
+                                  </ul></td>
+                                  <td><ul class="example-2">
+                                    <li class="icon-content">
+                                      <a
+                                        href="#"
+                                        aria-label="scs"
+                                        data-social="scs"
+                                      >
+                                        <div class="filled"></div>
+                                        <svg width="1.5em" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-info-octagon" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                          <path d="M12.802 2.165l5.575 2.389c.48 .206 .863 .589 1.07 1.07l2.388 5.574c.22 .512 .22 1.092 0 1.604l-2.389 5.575c-.206 .48 -.589 .863 -1.07 1.07l-5.574 2.388c-.512 .22 -1.092 .22 -1.604 0l-5.575 -2.389a2.036 2.036 0 0 1 -1.07 -1.07l-2.388 -5.574a2.036 2.036 0 0 1 0 -1.604l2.389 -5.575c.206 -.48 .589 -.863 1.07 -1.07l5.574 -2.388a2.036 2.036 0 0 1 1.604 0z" />
+                                          <path d="M12 9h.01" />
+                                          <path d="M11 12h1v4h1" />
+                                        </svg>
+                                      </a>
+                                      <div class="tooltip">YES</div>
+                                    </li>
+                                  </ul></td>
+                                  <td><ul class="example-2">
+                                    <li class="icon-content">
+                                      <a
+                                        href="#"
+                                        aria-label="scs"
+                                        data-social="scs"
+                                      >
+                                        <div class="filled"></div>
+                                        <svg width="21.5em" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-info-octagon" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                          <path d="M12.802 2.165l5.575 2.389c.48 .206 .863 .589 1.07 1.07l2.388 5.574c.22 .512 .22 1.092 0 1.604l-2.389 5.575c-.206 .48 -.589 .863 -1.07 1.07l-5.574 2.388c-.512 .22 -1.092 .22 -1.604 0l-5.575 -2.389a2.036 2.036 0 0 1 -1.07 -1.07l-2.388 -5.574a2.036 2.036 0 0 1 0 -1.604l2.389 -5.575c.206 -.48 .589 -.863 1.07 -1.07l5.574 -2.388a2.036 2.036 0 0 1 1.604 0z" />
+                                          <path d="M12 9h.01" />
+                                          <path d="M11 12h1v4h1" />
+                                        </svg>
+                                      </a>
+                                      <div class="tooltip">YES</div>
+                                    </li>
+                                  </ul></td>
+                                  <td>1.127</td>
+                                  <td>5.5</td>
+                                  <td><a href=""><svg width="2em" stroke="#0fb492" stroke-width="2" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-folder-plus" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                    <path d="M12 19h-7a2 2 0 0 1 -2 -2v-11a2 2 0 0 1 2 -2h4l3 3h7a2 2 0 0 1 2 2v3.5" />
+                                    <path d="M16 19h6" />
+                                    <path d="M19 16v6" />
+                                  </svg></a></td>
+                                  <td><button class="register-btn">Register</button></td>
+                                </tr>
+                                <tr>
+                                  <td>6.</td>
+                                  <td>
+                                    <a
+                                      href="http://iopscience.iop.org/journal/2053-1583"
+                                      style="color:#664cbe">2D Materials</a
+                                    >
+                                    <a href="../detailpage/journalDetails.html" style="color:black;text-decoration: none;">
+                                    <p>
+                                      &#x1F512; INTERNATIONAL, [Frequency- 4 ]
+                                    </p>
+                                    <p>
+                                      2D Materials™ is a multidisciplinary,
+                                      <br />electronic-only journal devoted..
+                                    </p>
+                                  </a>
+                                  </td>
+                                  <td>
+                                    
+                                    <ul class="example-2">
+                                      <li class="icon-content">
+                                        <a
+                                          href="#"
+                                          aria-label="scs"
+                                          data-social="scs"
+                                        >
+                                          <div class="filled"></div>
+                                          <svg width="1em" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-info-octagon" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                            <path d="M12.802 2.165l5.575 2.389c.48 .206 .863 .589 1.07 1.07l2.388 5.574c.22 .512 .22 1.092 0 1.604l-2.389 5.575c-.206 .48 -.589 .863 -1.07 1.07l-5.574 2.388c-.512 .22 -1.092 .22 -1.604 0l-5.575 -2.389a2.036 2.036 0 0 1 -1.07 -1.07l-2.388 -5.574a2.036 2.036 0 0 1 0 -1.604l2.389 -5.575c.206 -.48 .589 -.863 1.07 -1.07l5.574 -2.388a2.036 2.036 0 0 1 1.604 0z" />
+                                            <path d="M12 9h.01" />
+                                            <path d="M11 12h1v4h1" />
+                                          </svg>
+                                        </a>
+                                        <div class="tooltip">Active</div>
+                                      </li>
+                                    </ul>
+                                  </td>
+                                  <td><ul class="example-2">
+                                    <li class="icon-content">
+                                      <a
+                                        href="#"
+                                        aria-label="scs"
+                                        data-social="scs"
+                                      >
+                                        <div class="filled"></div>
+                                        <svg width="1.5em" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-info-octagon" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                          <path d="M12.802 2.165l5.575 2.389c.48 .206 .863 .589 1.07 1.07l2.388 5.574c.22 .512 .22 1.092 0 1.604l-2.389 5.575c-.206 .48 -.589 .863 -1.07 1.07l-5.574 2.388c-.512 .22 -1.092 .22 -1.604 0l-5.575 -2.389a2.036 2.036 0 0 1 -1.07 -1.07l-2.388 -5.574a2.036 2.036 0 0 1 0 -1.604l2.389 -5.575c.206 -.48 .589 -.863 1.07 -1.07l5.574 -2.388a2.036 2.036 0 0 1 1.604 0z" />
+                                          <path d="M12 9h.01" />
+                                          <path d="M11 12h1v4h1" />
+                                        </svg>
+                                      </a>
+                                      <div class="tooltip">YES</div>
+                                    </li>
+                                  </ul></td>
+                                  <td>
+                                  <ul class="example-2">
+                                    <li class="icon-content">
+                                      <a
+                                        href="#"
+                                        aria-label="scs"
+                                        data-social="scs"
+                                      >
+                                        <div class="filled"></div>
+                                        <svg width="1.5em" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-info-octagon" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                          <path d="M12.802 2.165l5.575 2.389c.48 .206 .863 .589 1.07 1.07l2.388 5.574c.22 .512 .22 1.092 0 1.604l-2.389 5.575c-.206 .48 -.589 .863 -1.07 1.07l-5.574 2.388c-.512 .22 -1.092 .22 -1.604 0l-5.575 -2.389a2.036 2.036 0 0 1 -1.07 -1.07l-2.388 -5.574a2.036 2.036 0 0 1 0 -1.604l2.389 -5.575c.206 -.48 .589 -.863 1.07 -1.07l5.574 -2.388a2.036 2.036 0 0 1 1.604 0z" />
+                                          <path d="M12 9h.01" />
+                                          <path d="M11 12h1v4h1" />
+                                        </svg>
+                                      </a>
+                                      <div class="tooltip">YES</div>
+                                    </li>
+                                  </ul></td>
+                                  <td><ul class="example-2">
+                                    <li class="icon-content">
+                                      <a
+                                        href="#"
+                                        aria-label="scs"
+                                        data-social="scs"
+                                      >
+                                        <div class="filled"></div>
+                                        <svg width="1.5em" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-info-octagon" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                          <path d="M12.802 2.165l5.575 2.389c.48 .206 .863 .589 1.07 1.07l2.388 5.574c.22 .512 .22 1.092 0 1.604l-2.389 5.575c-.206 .48 -.589 .863 -1.07 1.07l-5.574 2.388c-.512 .22 -1.092 .22 -1.604 0l-5.575 -2.389a2.036 2.036 0 0 1 -1.07 -1.07l-2.388 -5.574a2.036 2.036 0 0 1 0 -1.604l2.389 -5.575c.206 -.48 .589 -.863 1.07 -1.07l5.574 -2.388a2.036 2.036 0 0 1 1.604 0z" />
+                                          <path d="M12 9h.01" />
+                                          <path d="M11 12h1v4h1" />
+                                        </svg>
+                                      </a>
+                                      <div class="tooltip">YES</div>
+                                    </li>
+                                  </ul></td>
+                                  <td><ul class="example-2">
+                                    <li class="icon-content">
+                                      <a
+                                        href="#"
+                                        aria-label="scs"
+                                        data-social="scs"
+                                      >
+                                        <div class="filled"></div>
+                                        <svg width="21.5em" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-info-octagon" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                          <path d="M12.802 2.165l5.575 2.389c.48 .206 .863 .589 1.07 1.07l2.388 5.574c.22 .512 .22 1.092 0 1.604l-2.389 5.575c-.206 .48 -.589 .863 -1.07 1.07l-5.574 2.388c-.512 .22 -1.092 .22 -1.604 0l-5.575 -2.389a2.036 2.036 0 0 1 -1.07 -1.07l-2.388 -5.574a2.036 2.036 0 0 1 0 -1.604l2.389 -5.575c.206 -.48 .589 -.863 1.07 -1.07l5.574 -2.388a2.036 2.036 0 0 1 1.604 0z" />
+                                          <path d="M12 9h.01" />
+                                          <path d="M11 12h1v4h1" />
+                                        </svg>
+                                      </a>
+                                      <div class="tooltip">YES</div>
+                                    </li>
+                                  </ul></td>
+                                  <td>1.127</td>
+                                  <td>5.5</td>
+                                  <td><a href=""><svg width="2em" stroke="#0fb492" stroke-width="2" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-folder-plus" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                    <path d="M12 19h-7a2 2 0 0 1 -2 -2v-11a2 2 0 0 1 2 -2h4l3 3h7a2 2 0 0 1 2 2v3.5" />
+                                    <path d="M16 19h6" />
+                                    <path d="M19 16v6" />
+                                  </svg></a></td>
+                                  <td><button class="register-btn">Register</button></td>
+                                </tr>
+                                <tr>
+                                  <td>7.</td>
+                                  <td>
+                                    <a
+                                      href="http://iopscience.iop.org/journal/2053-1583"
+                                      style="color:#664cbe">2D Materials</a
+                                    >
+                                    <a href="../detailpage/journalDetails.html" style="color:black;text-decoration: none;">
+                                    <p>
+                                      &#x1F512; INTERNATIONAL, [Frequency- 4 ]
+                                    </p>
+                                    <p>
+                                      2D Materials™ is a multidisciplinary,
+                                      <br />electronic-only journal devoted..
+                                    </p>
+                                  </a>
+                                  </td>
+                                  <td>
+                                    
+                                    <ul class="example-2">
+                                      <li class="icon-content">
+                                        <a
+                                          href="#"
+                                          aria-label="scs"
+                                          data-social="scs"
+                                        >
+                                          <div class="filled"></div>
+                                          <svg width="1em" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-info-octagon" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                            <path d="M12.802 2.165l5.575 2.389c.48 .206 .863 .589 1.07 1.07l2.388 5.574c.22 .512 .22 1.092 0 1.604l-2.389 5.575c-.206 .48 -.589 .863 -1.07 1.07l-5.574 2.388c-.512 .22 -1.092 .22 -1.604 0l-5.575 -2.389a2.036 2.036 0 0 1 -1.07 -1.07l-2.388 -5.574a2.036 2.036 0 0 1 0 -1.604l2.389 -5.575c.206 -.48 .589 -.863 1.07 -1.07l5.574 -2.388a2.036 2.036 0 0 1 1.604 0z" />
+                                            <path d="M12 9h.01" />
+                                            <path d="M11 12h1v4h1" />
+                                          </svg>
+                                        </a>
+                                        <div class="tooltip">Active</div>
+                                      </li>
+                                    </ul>
+                                  </td>
+                                  <td><ul class="example-2">
+                                    <li class="icon-content">
+                                      <a
+                                        href="#"
+                                        aria-label="scs"
+                                        data-social="scs"
+                                      >
+                                        <div class="filled"></div>
+                                        <svg width="1.5em" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-info-octagon" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                          <path d="M12.802 2.165l5.575 2.389c.48 .206 .863 .589 1.07 1.07l2.388 5.574c.22 .512 .22 1.092 0 1.604l-2.389 5.575c-.206 .48 -.589 .863 -1.07 1.07l-5.574 2.388c-.512 .22 -1.092 .22 -1.604 0l-5.575 -2.389a2.036 2.036 0 0 1 -1.07 -1.07l-2.388 -5.574a2.036 2.036 0 0 1 0 -1.604l2.389 -5.575c.206 -.48 .589 -.863 1.07 -1.07l5.574 -2.388a2.036 2.036 0 0 1 1.604 0z" />
+                                          <path d="M12 9h.01" />
+                                          <path d="M11 12h1v4h1" />
+                                        </svg>
+                                      </a>
+                                      <div class="tooltip">YES</div>
+                                    </li>
+                                  </ul></td>
+                                  <td>
+                                  <ul class="example-2">
+                                    <li class="icon-content">
+                                      <a
+                                        href="#"
+                                        aria-label="scs"
+                                        data-social="scs"
+                                      >
+                                        <div class="filled"></div>
+                                        <svg width="1.5em" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-info-octagon" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                          <path d="M12.802 2.165l5.575 2.389c.48 .206 .863 .589 1.07 1.07l2.388 5.574c.22 .512 .22 1.092 0 1.604l-2.389 5.575c-.206 .48 -.589 .863 -1.07 1.07l-5.574 2.388c-.512 .22 -1.092 .22 -1.604 0l-5.575 -2.389a2.036 2.036 0 0 1 -1.07 -1.07l-2.388 -5.574a2.036 2.036 0 0 1 0 -1.604l2.389 -5.575c.206 -.48 .589 -.863 1.07 -1.07l5.574 -2.388a2.036 2.036 0 0 1 1.604 0z" />
+                                          <path d="M12 9h.01" />
+                                          <path d="M11 12h1v4h1" />
+                                        </svg>
+                                      </a>
+                                      <div class="tooltip">YES</div>
+                                    </li>
+                                  </ul></td>
+                                  <td><ul class="example-2">
+                                    <li class="icon-content">
+                                      <a
+                                        href="#"
+                                        aria-label="scs"
+                                        data-social="scs"
+                                      >
+                                        <div class="filled"></div>
+                                        <svg width="1.5em" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-info-octagon" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                          <path d="M12.802 2.165l5.575 2.389c.48 .206 .863 .589 1.07 1.07l2.388 5.574c.22 .512 .22 1.092 0 1.604l-2.389 5.575c-.206 .48 -.589 .863 -1.07 1.07l-5.574 2.388c-.512 .22 -1.092 .22 -1.604 0l-5.575 -2.389a2.036 2.036 0 0 1 -1.07 -1.07l-2.388 -5.574a2.036 2.036 0 0 1 0 -1.604l2.389 -5.575c.206 -.48 .589 -.863 1.07 -1.07l5.574 -2.388a2.036 2.036 0 0 1 1.604 0z" />
+                                          <path d="M12 9h.01" />
+                                          <path d="M11 12h1v4h1" />
+                                        </svg>
+                                      </a>
+                                      <div class="tooltip">YES</div>
+                                    </li>
+                                  </ul></td>
+                                  <td><ul class="example-2">
+                                    <li class="icon-content">
+                                      <a
+                                        href="#"
+                                        aria-label="scs"
+                                        data-social="scs"
+                                      >
+                                        <div class="filled"></div>
+                                        <svg width="21.5em" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-info-octagon" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                          <path d="M12.802 2.165l5.575 2.389c.48 .206 .863 .589 1.07 1.07l2.388 5.574c.22 .512 .22 1.092 0 1.604l-2.389 5.575c-.206 .48 -.589 .863 -1.07 1.07l-5.574 2.388c-.512 .22 -1.092 .22 -1.604 0l-5.575 -2.389a2.036 2.036 0 0 1 -1.07 -1.07l-2.388 -5.574a2.036 2.036 0 0 1 0 -1.604l2.389 -5.575c.206 -.48 .589 -.863 1.07 -1.07l5.574 -2.388a2.036 2.036 0 0 1 1.604 0z" />
+                                          <path d="M12 9h.01" />
+                                          <path d="M11 12h1v4h1" />
+                                        </svg>
+                                      </a>
+                                      <div class="tooltip">YES</div>
+                                    </li>
+                                  </ul></td>
+                                  <td>1.127</td>
+                                  <td>5.5</td>
+                                  <td><a href=""><svg width="2em" stroke="#0fb492" stroke-width="2" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-folder-plus" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                    <path d="M12 19h-7a2 2 0 0 1 -2 -2v-11a2 2 0 0 1 2 -2h4l3 3h7a2 2 0 0 1 2 2v3.5" />
+                                    <path d="M16 19h6" />
+                                    <path d="M19 16v6" />
+                                  </svg></a></td>
+                                  <td><button class="register-btn">Register</button></td>
+                                </tr>
+                                <tr>
+                                  <td>8.</td>
+                                  <td>
+                                    <a
+                                      href="http://iopscience.iop.org/journal/2053-1583"
+                                      style="color:#664cbe">2D Materials</a
+                                    >
+                                    <a href="../detailpage/journalDetails.html" style="color:black;text-decoration: none;">
+                                    <p>
+                                      &#x1F512; INTERNATIONAL, [Frequency- 4 ]
+                                    </p>
+                                    <p>
+                                      2D Materials™ is a multidisciplinary,
+                                      <br />electronic-only journal devoted..
+                                    </p>
+                                  </a>
+                                  </td>
+                                  <td>
+                                    
+                                    <ul class="example-2">
+                                      <li class="icon-content">
+                                        <a
+                                          href="#"
+                                          aria-label="scs"
+                                          data-social="scs"
+                                        >
+                                          <div class="filled"></div>
+                                          <svg width="1em" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-info-octagon" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                            <path d="M12.802 2.165l5.575 2.389c.48 .206 .863 .589 1.07 1.07l2.388 5.574c.22 .512 .22 1.092 0 1.604l-2.389 5.575c-.206 .48 -.589 .863 -1.07 1.07l-5.574 2.388c-.512 .22 -1.092 .22 -1.604 0l-5.575 -2.389a2.036 2.036 0 0 1 -1.07 -1.07l-2.388 -5.574a2.036 2.036 0 0 1 0 -1.604l2.389 -5.575c.206 -.48 .589 -.863 1.07 -1.07l5.574 -2.388a2.036 2.036 0 0 1 1.604 0z" />
+                                            <path d="M12 9h.01" />
+                                            <path d="M11 12h1v4h1" />
+                                          </svg>
+                                        </a>
+                                        <div class="tooltip">Active</div>
+                                      </li>
+                                    </ul>
+                                  </td>
+                                  <td><ul class="example-2">
+                                    <li class="icon-content">
+                                      <a
+                                        href="#"
+                                        aria-label="scs"
+                                        data-social="scs"
+                                      >
+                                        <div class="filled"></div>
+                                        <svg width="1.5em" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-info-octagon" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                          <path d="M12.802 2.165l5.575 2.389c.48 .206 .863 .589 1.07 1.07l2.388 5.574c.22 .512 .22 1.092 0 1.604l-2.389 5.575c-.206 .48 -.589 .863 -1.07 1.07l-5.574 2.388c-.512 .22 -1.092 .22 -1.604 0l-5.575 -2.389a2.036 2.036 0 0 1 -1.07 -1.07l-2.388 -5.574a2.036 2.036 0 0 1 0 -1.604l2.389 -5.575c.206 -.48 .589 -.863 1.07 -1.07l5.574 -2.388a2.036 2.036 0 0 1 1.604 0z" />
+                                          <path d="M12 9h.01" />
+                                          <path d="M11 12h1v4h1" />
+                                        </svg>
+                                      </a>
+                                      <div class="tooltip">YES</div>
+                                    </li>
+                                  </ul></td>
+                                  <td>
+                                  <ul class="example-2">
+                                    <li class="icon-content">
+                                      <a
+                                        href="#"
+                                        aria-label="scs"
+                                        data-social="scs"
+                                      >
+                                        <div class="filled"></div>
+                                        <svg width="1.5em" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-info-octagon" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                          <path d="M12.802 2.165l5.575 2.389c.48 .206 .863 .589 1.07 1.07l2.388 5.574c.22 .512 .22 1.092 0 1.604l-2.389 5.575c-.206 .48 -.589 .863 -1.07 1.07l-5.574 2.388c-.512 .22 -1.092 .22 -1.604 0l-5.575 -2.389a2.036 2.036 0 0 1 -1.07 -1.07l-2.388 -5.574a2.036 2.036 0 0 1 0 -1.604l2.389 -5.575c.206 -.48 .589 -.863 1.07 -1.07l5.574 -2.388a2.036 2.036 0 0 1 1.604 0z" />
+                                          <path d="M12 9h.01" />
+                                          <path d="M11 12h1v4h1" />
+                                        </svg>
+                                      </a>
+                                      <div class="tooltip">YES</div>
+                                    </li>
+                                  </ul></td>
+                                  <td><ul class="example-2">
+                                    <li class="icon-content">
+                                      <a
+                                        href="#"
+                                        aria-label="scs"
+                                        data-social="scs"
+                                      >
+                                        <div class="filled"></div>
+                                        <svg width="1.5em" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-info-octagon" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                          <path d="M12.802 2.165l5.575 2.389c.48 .206 .863 .589 1.07 1.07l2.388 5.574c.22 .512 .22 1.092 0 1.604l-2.389 5.575c-.206 .48 -.589 .863 -1.07 1.07l-5.574 2.388c-.512 .22 -1.092 .22 -1.604 0l-5.575 -2.389a2.036 2.036 0 0 1 -1.07 -1.07l-2.388 -5.574a2.036 2.036 0 0 1 0 -1.604l2.389 -5.575c.206 -.48 .589 -.863 1.07 -1.07l5.574 -2.388a2.036 2.036 0 0 1 1.604 0z" />
+                                          <path d="M12 9h.01" />
+                                          <path d="M11 12h1v4h1" />
+                                        </svg>
+                                      </a>
+                                      <div class="tooltip">YES</div>
+                                    </li>
+                                  </ul></td>
+                                  <td><ul class="example-2">
+                                    <li class="icon-content">
+                                      <a
+                                        href="#"
+                                        aria-label="scs"
+                                        data-social="scs"
+                                      >
+                                        <div class="filled"></div>
+                                        <svg width="21.5em" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-info-octagon" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                          <path d="M12.802 2.165l5.575 2.389c.48 .206 .863 .589 1.07 1.07l2.388 5.574c.22 .512 .22 1.092 0 1.604l-2.389 5.575c-.206 .48 -.589 .863 -1.07 1.07l-5.574 2.388c-.512 .22 -1.092 .22 -1.604 0l-5.575 -2.389a2.036 2.036 0 0 1 -1.07 -1.07l-2.388 -5.574a2.036 2.036 0 0 1 0 -1.604l2.389 -5.575c.206 -.48 .589 -.863 1.07 -1.07l5.574 -2.388a2.036 2.036 0 0 1 1.604 0z" />
+                                          <path d="M12 9h.01" />
+                                          <path d="M11 12h1v4h1" />
+                                        </svg>
+                                      </a>
+                                      <div class="tooltip">YES</div>
+                                    </li>
+                                  </ul></td>
+                                  <td>1.127</td>
+                                  <td>5.5</td>
+                                  <td><a href=""><svg width="2em" stroke="#0fb492" stroke-width="2" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-folder-plus" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                    <path d="M12 19h-7a2 2 0 0 1 -2 -2v-11a2 2 0 0 1 2 -2h4l3 3h7a2 2 0 0 1 2 2v3.5" />
+                                    <path d="M16 19h6" />
+                                    <path d="M19 16v6" />
+                                  </svg></a></td>
+                                  <td><button class="register-btn">Register</button></td>
+                                </tr>
+                                <tr>
+                                  <td>9.</td>
+                                  <td>
+                                    <a
+                                      href="http://iopscience.iop.org/journal/2053-1583"
+                                      style="color:#664cbe">2D Materials</a
+                                    >
+                                    <a href="../detailpage/journalDetails.html" style="color:black;text-decoration: none;">
+                                    <p>
+                                      &#x1F512; INTERNATIONAL, [Frequency- 4 ]
+                                    </p>
+                                    <p>
+                                      2D Materials™ is a multidisciplinary,
+                                      <br />electronic-only journal devoted..
+                                    </p>
+                                  </a>
+                                  </td>
+                                  <td>
+                                    
+                                    <ul class="example-2">
+                                      <li class="icon-content">
+                                        <a
+                                          href="#"
+                                          aria-label="scs"
+                                          data-social="scs"
+                                        >
+                                          <div class="filled"></div>
+                                          <svg width="1em" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-info-octagon" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                            <path d="M12.802 2.165l5.575 2.389c.48 .206 .863 .589 1.07 1.07l2.388 5.574c.22 .512 .22 1.092 0 1.604l-2.389 5.575c-.206 .48 -.589 .863 -1.07 1.07l-5.574 2.388c-.512 .22 -1.092 .22 -1.604 0l-5.575 -2.389a2.036 2.036 0 0 1 -1.07 -1.07l-2.388 -5.574a2.036 2.036 0 0 1 0 -1.604l2.389 -5.575c.206 -.48 .589 -.863 1.07 -1.07l5.574 -2.388a2.036 2.036 0 0 1 1.604 0z" />
+                                            <path d="M12 9h.01" />
+                                            <path d="M11 12h1v4h1" />
+                                          </svg>
+                                        </a>
+                                        <div class="tooltip">Active</div>
+                                      </li>
+                                    </ul>
+                                  </td>
+                                  <td><ul class="example-2">
+                                    <li class="icon-content">
+                                      <a
+                                        href="#"
+                                        aria-label="scs"
+                                        data-social="scs"
+                                      >
+                                        <div class="filled"></div>
+                                        <svg width="1.5em" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-info-octagon" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                          <path d="M12.802 2.165l5.575 2.389c.48 .206 .863 .589 1.07 1.07l2.388 5.574c.22 .512 .22 1.092 0 1.604l-2.389 5.575c-.206 .48 -.589 .863 -1.07 1.07l-5.574 2.388c-.512 .22 -1.092 .22 -1.604 0l-5.575 -2.389a2.036 2.036 0 0 1 -1.07 -1.07l-2.388 -5.574a2.036 2.036 0 0 1 0 -1.604l2.389 -5.575c.206 -.48 .589 -.863 1.07 -1.07l5.574 -2.388a2.036 2.036 0 0 1 1.604 0z" />
+                                          <path d="M12 9h.01" />
+                                          <path d="M11 12h1v4h1" />
+                                        </svg>
+                                      </a>
+                                      <div class="tooltip">YES</div>
+                                    </li>
+                                  </ul></td>
+                                  <td>
+                                  <ul class="example-2">
+                                    <li class="icon-content">
+                                      <a
+                                        href="#"
+                                        aria-label="scs"
+                                        data-social="scs"
+                                      >
+                                        <div class="filled"></div>
+                                        <svg width="1.5em" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-info-octagon" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                          <path d="M12.802 2.165l5.575 2.389c.48 .206 .863 .589 1.07 1.07l2.388 5.574c.22 .512 .22 1.092 0 1.604l-2.389 5.575c-.206 .48 -.589 .863 -1.07 1.07l-5.574 2.388c-.512 .22 -1.092 .22 -1.604 0l-5.575 -2.389a2.036 2.036 0 0 1 -1.07 -1.07l-2.388 -5.574a2.036 2.036 0 0 1 0 -1.604l2.389 -5.575c.206 -.48 .589 -.863 1.07 -1.07l5.574 -2.388a2.036 2.036 0 0 1 1.604 0z" />
+                                          <path d="M12 9h.01" />
+                                          <path d="M11 12h1v4h1" />
+                                        </svg>
+                                      </a>
+                                      <div class="tooltip">YES</div>
+                                    </li>
+                                  </ul></td>
+                                  <td><ul class="example-2">
+                                    <li class="icon-content">
+                                      <a
+                                        href="#"
+                                        aria-label="scs"
+                                        data-social="scs"
+                                      >
+                                        <div class="filled"></div>
+                                        <svg width="1.5em" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-info-octagon" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                          <path d="M12.802 2.165l5.575 2.389c.48 .206 .863 .589 1.07 1.07l2.388 5.574c.22 .512 .22 1.092 0 1.604l-2.389 5.575c-.206 .48 -.589 .863 -1.07 1.07l-5.574 2.388c-.512 .22 -1.092 .22 -1.604 0l-5.575 -2.389a2.036 2.036 0 0 1 -1.07 -1.07l-2.388 -5.574a2.036 2.036 0 0 1 0 -1.604l2.389 -5.575c.206 -.48 .589 -.863 1.07 -1.07l5.574 -2.388a2.036 2.036 0 0 1 1.604 0z" />
+                                          <path d="M12 9h.01" />
+                                          <path d="M11 12h1v4h1" />
+                                        </svg>
+                                      </a>
+                                      <div class="tooltip">YES</div>
+                                    </li>
+                                  </ul></td>
+                                  <td><ul class="example-2">
+                                    <li class="icon-content">
+                                      <a
+                                        href="#"
+                                        aria-label="scs"
+                                        data-social="scs"
+                                      >
+                                        <div class="filled"></div>
+                                        <svg width="21.5em" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-info-octagon" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                          <path d="M12.802 2.165l5.575 2.389c.48 .206 .863 .589 1.07 1.07l2.388 5.574c.22 .512 .22 1.092 0 1.604l-2.389 5.575c-.206 .48 -.589 .863 -1.07 1.07l-5.574 2.388c-.512 .22 -1.092 .22 -1.604 0l-5.575 -2.389a2.036 2.036 0 0 1 -1.07 -1.07l-2.388 -5.574a2.036 2.036 0 0 1 0 -1.604l2.389 -5.575c.206 -.48 .589 -.863 1.07 -1.07l5.574 -2.388a2.036 2.036 0 0 1 1.604 0z" />
+                                          <path d="M12 9h.01" />
+                                          <path d="M11 12h1v4h1" />
+                                        </svg>
+                                      </a>
+                                      <div class="tooltip">YES</div>
+                                    </li>
+                                  </ul></td>
+                                  <td>1.127</td>
+                                  <td>5.5</td>
+                                  <td><a href=""><svg width="2em" stroke="#0fb492" stroke-width="2" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-folder-plus" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                    <path d="M12 19h-7a2 2 0 0 1 -2 -2v-11a2 2 0 0 1 2 -2h4l3 3h7a2 2 0 0 1 2 2v3.5" />
+                                    <path d="M16 19h6" />
+                                    <path d="M19 16v6" />
+                                  </svg></a></td>
+                                  <td><button class="register-btn">Register</button></td>
+                                </tr>
+                                <tr>
+                                  <td>10.</td>
+                                  <td>
+                                    <a
+                                      href="http://iopscience.iop.org/journal/2053-1583"
+                                      style="color:#664cbe">2D Materials</a
+                                    >
+                                    <a href="../detailpage/journalDetails.html" style="color:black;text-decoration: none;">
+                                    <p>
+                                      &#x1F512; INTERNATIONAL, [Frequency- 4 ]
+                                    </p>
+                                    <p>
+                                      2D Materials™ is a multidisciplinary,
+                                      <br />electronic-only journal devoted..
+                                    </p>
+                                  </a>
+                                  </td>
+                                  <td>
+                                    
+                                    <ul class="example-2">
+                                      <li class="icon-content">
+                                        <a
+                                          href="#"
+                                          aria-label="scs"
+                                          data-social="scs"
+                                        >
+                                          <div class="filled"></div>
+                                          <svg width="1em" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-info-octagon" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                            <path d="M12.802 2.165l5.575 2.389c.48 .206 .863 .589 1.07 1.07l2.388 5.574c.22 .512 .22 1.092 0 1.604l-2.389 5.575c-.206 .48 -.589 .863 -1.07 1.07l-5.574 2.388c-.512 .22 -1.092 .22 -1.604 0l-5.575 -2.389a2.036 2.036 0 0 1 -1.07 -1.07l-2.388 -5.574a2.036 2.036 0 0 1 0 -1.604l2.389 -5.575c.206 -.48 .589 -.863 1.07 -1.07l5.574 -2.388a2.036 2.036 0 0 1 1.604 0z" />
+                                            <path d="M12 9h.01" />
+                                            <path d="M11 12h1v4h1" />
+                                          </svg>
+                                        </a>
+                                        <div class="tooltip">Active</div>
+                                      </li>
+                                    </ul>
+                                  </td>
+                                  <td><ul class="example-2">
+                                    <li class="icon-content">
+                                      <a
+                                        href="#"
+                                        aria-label="scs"
+                                        data-social="scs"
+                                      >
+                                        <div class="filled"></div>
+                                        <svg width="1.5em" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-info-octagon" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                          <path d="M12.802 2.165l5.575 2.389c.48 .206 .863 .589 1.07 1.07l2.388 5.574c.22 .512 .22 1.092 0 1.604l-2.389 5.575c-.206 .48 -.589 .863 -1.07 1.07l-5.574 2.388c-.512 .22 -1.092 .22 -1.604 0l-5.575 -2.389a2.036 2.036 0 0 1 -1.07 -1.07l-2.388 -5.574a2.036 2.036 0 0 1 0 -1.604l2.389 -5.575c.206 -.48 .589 -.863 1.07 -1.07l5.574 -2.388a2.036 2.036 0 0 1 1.604 0z" />
+                                          <path d="M12 9h.01" />
+                                          <path d="M11 12h1v4h1" />
+                                        </svg>
+                                      </a>
+                                      <div class="tooltip">YES</div>
+                                    </li>
+                                  </ul></td>
+                                  <td>
+                                  <ul class="example-2">
+                                    <li class="icon-content">
+                                      <a
+                                        href="#"
+                                        aria-label="scs"
+                                        data-social="scs"
+                                      >
+                                        <div class="filled"></div>
+                                        <svg width="1.5em" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-info-octagon" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                          <path d="M12.802 2.165l5.575 2.389c.48 .206 .863 .589 1.07 1.07l2.388 5.574c.22 .512 .22 1.092 0 1.604l-2.389 5.575c-.206 .48 -.589 .863 -1.07 1.07l-5.574 2.388c-.512 .22 -1.092 .22 -1.604 0l-5.575 -2.389a2.036 2.036 0 0 1 -1.07 -1.07l-2.388 -5.574a2.036 2.036 0 0 1 0 -1.604l2.389 -5.575c.206 -.48 .589 -.863 1.07 -1.07l5.574 -2.388a2.036 2.036 0 0 1 1.604 0z" />
+                                          <path d="M12 9h.01" />
+                                          <path d="M11 12h1v4h1" />
+                                        </svg>
+                                      </a>
+                                      <div class="tooltip">YES</div>
+                                    </li>
+                                  </ul></td>
+                                  <td><ul class="example-2">
+                                    <li class="icon-content">
+                                      <a
+                                        href="#"
+                                        aria-label="scs"
+                                        data-social="scs"
+                                      >
+                                        <div class="filled"></div>
+                                        <svg width="1.5em" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-info-octagon" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                          <path d="M12.802 2.165l5.575 2.389c.48 .206 .863 .589 1.07 1.07l2.388 5.574c.22 .512 .22 1.092 0 1.604l-2.389 5.575c-.206 .48 -.589 .863 -1.07 1.07l-5.574 2.388c-.512 .22 -1.092 .22 -1.604 0l-5.575 -2.389a2.036 2.036 0 0 1 -1.07 -1.07l-2.388 -5.574a2.036 2.036 0 0 1 0 -1.604l2.389 -5.575c.206 -.48 .589 -.863 1.07 -1.07l5.574 -2.388a2.036 2.036 0 0 1 1.604 0z" />
+                                          <path d="M12 9h.01" />
+                                          <path d="M11 12h1v4h1" />
+                                        </svg>
+                                      </a>
+                                      <div class="tooltip">YES</div>
+                                    </li>
+                                  </ul></td>
+                                  <td><ul class="example-2">
+                                    <li class="icon-content">
+                                      <a
+                                        href="#"
+                                        aria-label="scs"
+                                        data-social="scs"
+                                      >
+                                        <div class="filled"></div>
+                                        <svg width="21.5em" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-info-octagon" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                          <path d="M12.802 2.165l5.575 2.389c.48 .206 .863 .589 1.07 1.07l2.388 5.574c.22 .512 .22 1.092 0 1.604l-2.389 5.575c-.206 .48 -.589 .863 -1.07 1.07l-5.574 2.388c-.512 .22 -1.092 .22 -1.604 0l-5.575 -2.389a2.036 2.036 0 0 1 -1.07 -1.07l-2.388 -5.574a2.036 2.036 0 0 1 0 -1.604l2.389 -5.575c.206 -.48 .589 -.863 1.07 -1.07l5.574 -2.388a2.036 2.036 0 0 1 1.604 0z" />
+                                          <path d="M12 9h.01" />
+                                          <path d="M11 12h1v4h1" />
+                                        </svg>
+                                      </a>
+                                      <div class="tooltip">YES</div>
+                                    </li>
+                                  </ul></td>
+                                  <td>1.127</td>
+                                  <td>5.5</td>
+                                  <td><a href=""><svg width="2em" stroke="#0fb492" stroke-width="2" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-folder-plus" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                    <path d="M12 19h-7a2 2 0 0 1 -2 -2v-11a2 2 0 0 1 2 -2h4l3 3h7a2 2 0 0 1 2 2v3.5" />
+                                    <path d="M16 19h6" />
+                                    <path d="M19 16v6" />
+                                  </svg></a></td>
+                                  <td><button class="register-btn">Register</button></td>
+                                </tr>
+                                <tr>
+                                  <td>11.</td>
+                                  <td>
+                                    <a
+                                      href="http://iopscience.iop.org/journal/2053-1583"
+                                      style="color:#664cbe">2D Materials</a
+                                    >
+                                    <a href="../detailpage/journalDetails.html" style="color:black;text-decoration: none;">
+                                    <p>
+                                      &#x1F512; INTERNATIONAL, [Frequency- 4 ]
+                                    </p>
+                                    <p>
+                                      2D Materials™ is a multidisciplinary,
+                                      <br />electronic-only journal devoted..
+                                    </p>
+                                  </a>
+                                  </td>
+                                  <td>
+                                    
+                                    <ul class="example-2">
+                                      <li class="icon-content">
+                                        <a
+                                          href="#"
+                                          aria-label="scs"
+                                          data-social="scs"
+                                        >
+                                          <div class="filled"></div>
+                                          <svg width="1em" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-info-octagon" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                            <path d="M12.802 2.165l5.575 2.389c.48 .206 .863 .589 1.07 1.07l2.388 5.574c.22 .512 .22 1.092 0 1.604l-2.389 5.575c-.206 .48 -.589 .863 -1.07 1.07l-5.574 2.388c-.512 .22 -1.092 .22 -1.604 0l-5.575 -2.389a2.036 2.036 0 0 1 -1.07 -1.07l-2.388 -5.574a2.036 2.036 0 0 1 0 -1.604l2.389 -5.575c.206 -.48 .589 -.863 1.07 -1.07l5.574 -2.388a2.036 2.036 0 0 1 1.604 0z" />
+                                            <path d="M12 9h.01" />
+                                            <path d="M11 12h1v4h1" />
+                                          </svg>
+                                        </a>
+                                        <div class="tooltip">Active</div>
+                                      </li>
+                                    </ul>
+                                  </td>
+                                  <td><ul class="example-2">
+                                    <li class="icon-content">
+                                      <a
+                                        href="#"
+                                        aria-label="scs"
+                                        data-social="scs"
+                                      >
+                                        <div class="filled"></div>
+                                        <svg width="1.5em" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-info-octagon" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                          <path d="M12.802 2.165l5.575 2.389c.48 .206 .863 .589 1.07 1.07l2.388 5.574c.22 .512 .22 1.092 0 1.604l-2.389 5.575c-.206 .48 -.589 .863 -1.07 1.07l-5.574 2.388c-.512 .22 -1.092 .22 -1.604 0l-5.575 -2.389a2.036 2.036 0 0 1 -1.07 -1.07l-2.388 -5.574a2.036 2.036 0 0 1 0 -1.604l2.389 -5.575c.206 -.48 .589 -.863 1.07 -1.07l5.574 -2.388a2.036 2.036 0 0 1 1.604 0z" />
+                                          <path d="M12 9h.01" />
+                                          <path d="M11 12h1v4h1" />
+                                        </svg>
+                                      </a>
+                                      <div class="tooltip">YES</div>
+                                    </li>
+                                  </ul></td>
+                                  <td>
+                                  <ul class="example-2">
+                                    <li class="icon-content">
+                                      <a
+                                        href="#"
+                                        aria-label="scs"
+                                        data-social="scs"
+                                      >
+                                        <div class="filled"></div>
+                                        <svg width="1.5em" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-info-octagon" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                          <path d="M12.802 2.165l5.575 2.389c.48 .206 .863 .589 1.07 1.07l2.388 5.574c.22 .512 .22 1.092 0 1.604l-2.389 5.575c-.206 .48 -.589 .863 -1.07 1.07l-5.574 2.388c-.512 .22 -1.092 .22 -1.604 0l-5.575 -2.389a2.036 2.036 0 0 1 -1.07 -1.07l-2.388 -5.574a2.036 2.036 0 0 1 0 -1.604l2.389 -5.575c.206 -.48 .589 -.863 1.07 -1.07l5.574 -2.388a2.036 2.036 0 0 1 1.604 0z" />
+                                          <path d="M12 9h.01" />
+                                          <path d="M11 12h1v4h1" />
+                                        </svg>
+                                      </a>
+                                      <div class="tooltip">YES</div>
+                                    </li>
+                                  </ul></td>
+                                  <td><ul class="example-2">
+                                    <li class="icon-content">
+                                      <a
+                                        href="#"
+                                        aria-label="scs"
+                                        data-social="scs"
+                                      >
+                                        <div class="filled"></div>
+                                        <svg width="1.5em" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-info-octagon" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                          <path d="M12.802 2.165l5.575 2.389c.48 .206 .863 .589 1.07 1.07l2.388 5.574c.22 .512 .22 1.092 0 1.604l-2.389 5.575c-.206 .48 -.589 .863 -1.07 1.07l-5.574 2.388c-.512 .22 -1.092 .22 -1.604 0l-5.575 -2.389a2.036 2.036 0 0 1 -1.07 -1.07l-2.388 -5.574a2.036 2.036 0 0 1 0 -1.604l2.389 -5.575c.206 -.48 .589 -.863 1.07 -1.07l5.574 -2.388a2.036 2.036 0 0 1 1.604 0z" />
+                                          <path d="M12 9h.01" />
+                                          <path d="M11 12h1v4h1" />
+                                        </svg>
+                                      </a>
+                                      <div class="tooltip">YES</div>
+                                    </li>
+                                  </ul></td>
+                                  <td><ul class="example-2">
+                                    <li class="icon-content">
+                                      <a
+                                        href="#"
+                                        aria-label="scs"
+                                        data-social="scs"
+                                      >
+                                        <div class="filled"></div>
+                                        <svg width="21.5em" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-info-octagon" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                          <path d="M12.802 2.165l5.575 2.389c.48 .206 .863 .589 1.07 1.07l2.388 5.574c.22 .512 .22 1.092 0 1.604l-2.389 5.575c-.206 .48 -.589 .863 -1.07 1.07l-5.574 2.388c-.512 .22 -1.092 .22 -1.604 0l-5.575 -2.389a2.036 2.036 0 0 1 -1.07 -1.07l-2.388 -5.574a2.036 2.036 0 0 1 0 -1.604l2.389 -5.575c.206 -.48 .589 -.863 1.07 -1.07l5.574 -2.388a2.036 2.036 0 0 1 1.604 0z" />
+                                          <path d="M12 9h.01" />
+                                          <path d="M11 12h1v4h1" />
+                                        </svg>
+                                      </a>
+                                      <div class="tooltip">YES</div>
+                                    </li>
+                                  </ul></td>
+                                  <td>1.127</td>
+                                  <td>5.5</td>
+                                  <td><a href=""><svg width="2em" stroke="#0fb492" stroke-width="2" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-folder-plus" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                    <path d="M12 19h-7a2 2 0 0 1 -2 -2v-11a2 2 0 0 1 2 -2h4l3 3h7a2 2 0 0 1 2 2v3.5" />
+                                    <path d="M16 19h6" />
+                                    <path d="M19 16v6" />
+                                  </svg></a></td>
+                                  <td><button class="register-btn">Register</button></td>
+                                </tr>
+                                <tr>
+                                  <td>12.</td>
+                                  <td>
+                                    <a
+                                      href="http://iopscience.iop.org/journal/2053-1583"
+                                      style="color:#664cbe">2D Materials</a
+                                    >
+                                    <a href="../detailpage/journalDetails.html" style="color:black;text-decoration: none;">
+                                    <p>
+                                      &#x1F512; INTERNATIONAL, [Frequency- 4 ]
+                                    </p>
+                                    <p>
+                                      2D Materials™ is a multidisciplinary,
+                                      <br />electronic-only journal devoted..
+                                    </p>
+                                  </a>
+                                  </td>
+                                  <td>
+                                    
+                                    <ul class="example-2">
+                                      <li class="icon-content">
+                                        <a
+                                          href="#"
+                                          aria-label="scs"
+                                          data-social="scs"
+                                        >
+                                          <div class="filled"></div>
+                                          <svg width="1em" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-info-octagon" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                            <path d="M12.802 2.165l5.575 2.389c.48 .206 .863 .589 1.07 1.07l2.388 5.574c.22 .512 .22 1.092 0 1.604l-2.389 5.575c-.206 .48 -.589 .863 -1.07 1.07l-5.574 2.388c-.512 .22 -1.092 .22 -1.604 0l-5.575 -2.389a2.036 2.036 0 0 1 -1.07 -1.07l-2.388 -5.574a2.036 2.036 0 0 1 0 -1.604l2.389 -5.575c.206 -.48 .589 -.863 1.07 -1.07l5.574 -2.388a2.036 2.036 0 0 1 1.604 0z" />
+                                            <path d="M12 9h.01" />
+                                            <path d="M11 12h1v4h1" />
+                                          </svg>
+                                        </a>
+                                        <div class="tooltip">Active</div>
+                                      </li>
+                                    </ul>
+                                  </td>
+                                  <td><ul class="example-2">
+                                    <li class="icon-content">
+                                      <a
+                                        href="#"
+                                        aria-label="scs"
+                                        data-social="scs"
+                                      >
+                                        <div class="filled"></div>
+                                        <svg width="1.5em" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-info-octagon" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                          <path d="M12.802 2.165l5.575 2.389c.48 .206 .863 .589 1.07 1.07l2.388 5.574c.22 .512 .22 1.092 0 1.604l-2.389 5.575c-.206 .48 -.589 .863 -1.07 1.07l-5.574 2.388c-.512 .22 -1.092 .22 -1.604 0l-5.575 -2.389a2.036 2.036 0 0 1 -1.07 -1.07l-2.388 -5.574a2.036 2.036 0 0 1 0 -1.604l2.389 -5.575c.206 -.48 .589 -.863 1.07 -1.07l5.574 -2.388a2.036 2.036 0 0 1 1.604 0z" />
+                                          <path d="M12 9h.01" />
+                                          <path d="M11 12h1v4h1" />
+                                        </svg>
+                                      </a>
+                                      <div class="tooltip">YES</div>
+                                    </li>
+                                  </ul></td>
+                                  <td>
+                                  <ul class="example-2">
+                                    <li class="icon-content">
+                                      <a
+                                        href="#"
+                                        aria-label="scs"
+                                        data-social="scs"
+                                      >
+                                        <div class="filled"></div>
+                                        <svg width="1.5em" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-info-octagon" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                          <path d="M12.802 2.165l5.575 2.389c.48 .206 .863 .589 1.07 1.07l2.388 5.574c.22 .512 .22 1.092 0 1.604l-2.389 5.575c-.206 .48 -.589 .863 -1.07 1.07l-5.574 2.388c-.512 .22 -1.092 .22 -1.604 0l-5.575 -2.389a2.036 2.036 0 0 1 -1.07 -1.07l-2.388 -5.574a2.036 2.036 0 0 1 0 -1.604l2.389 -5.575c.206 -.48 .589 -.863 1.07 -1.07l5.574 -2.388a2.036 2.036 0 0 1 1.604 0z" />
+                                          <path d="M12 9h.01" />
+                                          <path d="M11 12h1v4h1" />
+                                        </svg>
+                                      </a>
+                                      <div class="tooltip">YES</div>
+                                    </li>
+                                  </ul></td>
+                                  <td><ul class="example-2">
+                                    <li class="icon-content">
+                                      <a
+                                        href="#"
+                                        aria-label="scs"
+                                        data-social="scs"
+                                      >
+                                        <div class="filled"></div>
+                                        <svg width="1.5em" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-info-octagon" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                          <path d="M12.802 2.165l5.575 2.389c.48 .206 .863 .589 1.07 1.07l2.388 5.574c.22 .512 .22 1.092 0 1.604l-2.389 5.575c-.206 .48 -.589 .863 -1.07 1.07l-5.574 2.388c-.512 .22 -1.092 .22 -1.604 0l-5.575 -2.389a2.036 2.036 0 0 1 -1.07 -1.07l-2.388 -5.574a2.036 2.036 0 0 1 0 -1.604l2.389 -5.575c.206 -.48 .589 -.863 1.07 -1.07l5.574 -2.388a2.036 2.036 0 0 1 1.604 0z" />
+                                          <path d="M12 9h.01" />
+                                          <path d="M11 12h1v4h1" />
+                                        </svg>
+                                      </a>
+                                      <div class="tooltip">YES</div>
+                                    </li>
+                                  </ul></td>
+                                  <td><ul class="example-2">
+                                    <li class="icon-content">
+                                      <a
+                                        href="#"
+                                        aria-label="scs"
+                                        data-social="scs"
+                                      >
+                                        <div class="filled"></div>
+                                        <svg width="21.5em" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-info-octagon" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                          <path d="M12.802 2.165l5.575 2.389c.48 .206 .863 .589 1.07 1.07l2.388 5.574c.22 .512 .22 1.092 0 1.604l-2.389 5.575c-.206 .48 -.589 .863 -1.07 1.07l-5.574 2.388c-.512 .22 -1.092 .22 -1.604 0l-5.575 -2.389a2.036 2.036 0 0 1 -1.07 -1.07l-2.388 -5.574a2.036 2.036 0 0 1 0 -1.604l2.389 -5.575c.206 -.48 .589 -.863 1.07 -1.07l5.574 -2.388a2.036 2.036 0 0 1 1.604 0z" />
+                                          <path d="M12 9h.01" />
+                                          <path d="M11 12h1v4h1" />
+                                        </svg>
+                                      </a>
+                                      <div class="tooltip">YES</div>
+                                    </li>
+                                  </ul></td>
+                                  <td>1.127</td>
+                                  <td>5.5</td>
+                                  <td><a href=""><svg width="2em" stroke="#0fb492" stroke-width="2" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-folder-plus" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                    <path d="M12 19h-7a2 2 0 0 1 -2 -2v-11a2 2 0 0 1 2 -2h4l3 3h7a2 2 0 0 1 2 2v3.5" />
+                                    <path d="M16 19h6" />
+                                    <path d="M19 16v6" />
+                                  </svg></a></td>
+                                  <td><button class="register-btn">Register</button></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- content-wrapper ends -->
+          <!-- footer.html -->
+          <footer class="footer">
+            <div
+              class="d-sm-flex justify-content-center justify-content-sm-between"
+            >
+              <span
+                class="text-muted text-center text-sm-left d-block d-sm-inline-block"
+                >2024 ©
+                <a href="https://cintelligence.io" target="_blank"
+                  >CIntelligence Service Private Limited
+                </a></span
+              >
+            </div>
+          </footer>
+          <!-- End -->
+        </div>
+        <!-- main-panel ends -->
+      </div>
+      <!-- page-body-wrapper ends -->
+    </div>
+    <!-- container-scroller -->
+
+    <!-- plugins:js -->
+    <script src="../../vendors/base/vendor.bundle.base.js"></script>
+    <!-- endinject -->
+    <!-- Plugin js for this page-->
+    <!-- End plugin js for this page-->
+    <!-- inject:js -->
+    <script src="../../js/off-canvas.js"></script>
+    <script src="../../js/hoverable-collapse.js"></script>
+    <script src="../../js/template.js"></script>
+    <!-- endinject -->
+    <!-- Custom js for this page-->
+    <!-- End custom js for this page-->
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js
+  "></script>
+    <script src="https://cdn.datatables.net/1.13.7/js/dataTables.jqueryui.min.js
+  "></script>
+    <script src="https://cdn.datatables.net/rowgroup/1.4.1/js/dataTables.rowGroup.min.js
+  "></script>
+
+    <script>
+      new DataTable("#example", {
+        order: [[2, "asc"]],
+        rowGroup: {
+          dataSrc: 2,
+        },
+      });
+
+      // Assuming you have a reference to the element
+      var nextButton = document.getElementById("example_next");
+
+      if (nextButton) {
+        // Replace text content with '>>'
+        nextButton.textContent = " >>";
+      }
+      // Assuming you have a reference to the element
+      var prevButton = document.getElementById("example_previous");
+
+      if (prevButton) {
+        // Replace text content with '<<'
+        prevButton.textContent = " <<";
+      }
+    </script>
+  </body>
+</html>
